@@ -1,22 +1,45 @@
 {
   "name": "clickup-timesheet",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint:styles": "stylelint './src/**/*.tsx'",
+    "lint": "next lint && yarn lint:styles"
   },
   "dependencies": {
-    "@types/node": "20.2.3",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@tanstack/react-query": "^4.29.7",
+    "antd": "^5.5.0",
+    "axios": "^1.4.0",
+    "lodash.keyby": "^4.6.0",
+    "lodash.times": "^4.3.2",
+    "next": "13.4.3",
+    "nookies": "^2.5.2",
+    "qs": "^6.11.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash.keyby": "^4.6.7",
+    "@types/lodash.times": "^4.3.7",
+    "@types/node": "^20.1.7",
+    "@types/qs": "^6.9.7",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
+    "@untile/eslint-config-typescript-react": "^1.0.0",
+    "@untile/prettier-config": "^1.0.2",
+    "@untile/stylelint-config-react": "1.0.2",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "postcss": "^8.4.21",
+    "postcss-styled-syntax": "^0.4.0",
+    "prettier": "^2.8.8",
+    "stylelint": ">=15.3",
     "typescript": "5.0.4"
   }
 }
